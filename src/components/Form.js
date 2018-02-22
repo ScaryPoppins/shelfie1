@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class Form extends Component {
   constructor(props) {
@@ -62,7 +63,8 @@ class Form extends Component {
       description: this.state.description,
       img: this.state.img
     }
-    console.log('product', product)
+    axios.post('/api/product', product)
+    .then(res => console.log(res))
   }
   render() {
     return (
