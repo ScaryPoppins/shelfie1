@@ -11,6 +11,7 @@ class Form extends Component {
       img: ''
     }
   }
+  // Updates inputs
   handleUpdate(prop, val) {
     this.setState({ [prop]: val })
   }
@@ -41,10 +42,15 @@ class Form extends Component {
     // Limits cent input to two decimal places
     if (cents && cents[1]) {
       cents = cents[0] + cents[1];
-      val = dollars + cents; 
+      val = dollars + cents;
     } else if (!cents) {
       val = dollars;
-    } 
+    }
+    // Limits input size so price fits in db
+    if (Number(val) * 100 >= 2147483647) {
+      this.handleUpdate('price', this.state.price)
+      return;
+    }
     // Updates state once input is validated
     this.handleUpdate('price', val)
   }
@@ -54,26 +60,46 @@ class Form extends Component {
     num ? num = Number(num) : num = 0
     return Math.round(num * 100)
   }
-  
+
   // Submits new product
   handleSubmit() {
-    let product = {
-      name: this.state.name,
-      price: this.numberSubmit(this.state.price),
-      description: this.state.description,
-      img: this.state.img
+    let { name, price, description, img } = this.state;
+    if (name) {
+      let product = {
+        name,
+        price: this.numberSubmit(price),
+        description,
+        img
+      }
+      axios.post('/api/product', product)
+        .then(res => {
+          this.props.updateProducts(res.data);
+          this.clearInputs();
+        })
+        .catch(err => console.log('axios create error', err))
+    } else {
+      console.log('you are missing a name and need to handle this user fail');
     }
-    axios.post('/api/product', product)
-    .then(res => console.log(res))
+  }
+
+  // Clears the form
+  clearInputs() {
+    this.setState({
+      name: '',
+      price: 0,
+      description: '',
+      img: ''
+    })
   }
   render() {
     return (
       <div>
         <input type='text' value={this.state.img} onChange={e => this.handleUpdate('img', e.target.value)} />
         <input type='text' value={this.state.name} onChange={e => this.handleUpdate('name', e.target.value)} />
-        <input type='text' pattern="[0-9]*" value={this.state.price} onChange={e => this.numberInput(e.target.value)}/>
+        <input type='text' pattern="[0-9]*" value={this.state.price} onChange={e => this.numberInput(e.target.value)} />
         <textarea value={this.state.description} onChange={e => this.handleUpdate('description', e.target.value)} />
-        <button onClick={_=> this.handleSubmit()}>Save</button>
+        <button onClick={_ => this.handleSubmit()}>Save</button>
+        <button onClick={_ => this.clearInputs()}>Cancel</button>
       </div>
     );
   }
