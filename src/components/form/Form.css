@@ -1,10 +1,12 @@
 .Form {
   width: 350px;
   padding: 15px;
-  margin: 10px auto 0;
+  margin: 10px auto;
   border-radius: 7px;
   /* background-color: #d34735; */
-  background-color: #f4a197;
+  /* background-color: #ed6b5a; */
+  /* background-color: #40f99b; */
+  background-color: #3ad886;
   display: flex;
   flex-direction: column;
 }
@@ -28,6 +30,11 @@
   font-family: Open Sans, sans-serif;
   font-weight: 700;
 }
+.Form > input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #719ECE;
+  border: 1px solid #ab2a19;
+}
 
 .form_button_box {
   display: flex;
@@ -37,7 +44,11 @@
 .form_button_box > button {
   padding: 10px;
   margin: 5px 10px;
-  background-color: #40f99b;
+  /* background-color: #40f99b; */
+  /* background-color: #d34735; */
+  /* background-color: #ab2a19; */
+  background-color: #ed6b5a;
+  /* color: white; */
   border-radius: 7px;
   border: none;
   font-family: Open Sans, sans-serif;
