@@ -1,0 +1,9 @@
+.Dash {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Dash > * {
+  margin: 10px 0;
+}

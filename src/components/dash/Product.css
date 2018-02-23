@@ -1,0 +1,25 @@
+.Product {
+  width: 350px;
+  padding: 15px;
+  border-radius: 7px;
+  background-color: #ed6b5a;
+}
+.Product > * {
+  margin: 10px 0;
+}
+.product_img {
+  width: 320px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+.product_box {
+  display: flex;
+  justify-content: space-between;
+}
+.product_title {
+  font-size: 24px;
+}
+.product_price {
+  font-size: 20px;
+}

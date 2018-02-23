@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios'; 
 
-import Header from './components/Header';
-import Dash from './components/Dash';
-import Form from './components/Form';
+import Header from './components/header/Header';
+import Dash from './components/dash/Dash';
+import Form from './components/form/Form';
+
+import './base.css';
 
 class App extends Component {
   constructor(props) {
@@ -28,8 +30,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Dash products={this.state.products}/>
         <Form updateProducts={this.updateProducts}/>
+        <Dash products={this.state.products}/>
       </div>
     );
   }

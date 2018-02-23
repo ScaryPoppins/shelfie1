@@ -93,7 +93,8 @@ class Form extends Component {
   }
   render() {
     return (
-      <div>
+      <div className='Form'>
+        <div className='form_img_preview' style={{}}></div>
         <input type='text' value={this.state.img} onChange={e => this.handleUpdate('img', e.target.value)} />
         <input type='text' value={this.state.name} onChange={e => this.handleUpdate('name', e.target.value)} />
         <input type='text' pattern="[0-9]*" value={this.state.price} onChange={e => this.numberInput(e.target.value)} />
