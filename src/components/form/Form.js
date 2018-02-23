@@ -12,13 +12,27 @@ class Form extends Component {
       price: 0,
       img: ''
     }
-    this.imageInput = this.imageInput.bind(this);
+    // this.imageInput = this.imageInput.bind(this);
   }
   // Updates inputs
   handleUpdate(prop, val) {
     this.setState({ [prop]: val })
   }
 
+  // Validates image input
+  imageInput(url) {
+    var img = new Image();
+    img.onload = _ => this.handleUpdate('img', url);
+    img.onerror = _ => this.handleUpdate('img', '');
+    img.src = url;
+  }
+
+  // Validates name length
+  nameInput(text) {
+    if(text.length <= 20) {
+      this.handleUpdate('name', text)
+    }
+  }
   // Validates the number input for the price field
   numberInput(val) {
     // Automatically adds a zero to the dollars postition if '.' is the first thing in the input
@@ -58,13 +72,6 @@ class Form extends Component {
     this.handleUpdate('price', val)
   }
 
-  // Validates image
-  imageInput(url) {
-    var img = new Image();
-    img.onload = _=> this.handleUpdate('img', url);
-    img.onerror = _=> this.handleUpdate('img', '');
-    img.src = url;
-  }
   // Takes price input and converts it to a number type. Also converts amount to pennies for easy db storage
   numberSubmit(num) {
     num ? num = Number(num) : num = 0
@@ -102,13 +109,13 @@ class Form extends Component {
   render() {
     return (
       <div className='Form'>
-        {this.state.img 
-        ? <div className='form_img_preview' style={{ backgroundImage: `url('${this.state.img}')` }}></div>
-        : <div className='form_img_preview' style={{ backgroundImage: `url('${noImage}')` }}></div>}
+        {this.state.img
+          ? <div className='form_img_preview' style={{ backgroundImage: `url('${this.state.img}')` }}></div>
+          : <div className='form_img_preview' style={{ backgroundImage: `url('${noImage}')` }}></div>}
         <p>Image URL:</p>
         <input type='text' value={this.state.img} onChange={e => this.imageInput(e.target.value)} />
         <p>Product Name:</p>
-        <input type='text' value={this.state.name} onChange={e => this.handleUpdate('name', e.target.value)} />
+        <input type='text' value={this.state.name} onChange={e => this.nameInput(e.target.value)} />
         <p>Price:</p>
         <input type='text' pattern="[0-9]*" value={this.state.price} onChange={e => this.numberInput(e.target.value)} />
         <div className='form_button_box'>
