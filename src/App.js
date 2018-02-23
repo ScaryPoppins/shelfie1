@@ -6,6 +6,7 @@ import Dash from './components/dash/Dash';
 import Form from './components/form/Form';
 
 import './base.css';
+import './App.css';
 
 class App extends Component {
   constructor(props) {

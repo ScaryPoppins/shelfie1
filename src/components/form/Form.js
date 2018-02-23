@@ -12,7 +12,6 @@ class Form extends Component {
       price: 0,
       img: ''
     }
-    // this.imageInput = this.imageInput.bind(this);
   }
   // Updates inputs
   handleUpdate(prop, val) {

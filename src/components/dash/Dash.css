@@ -7,3 +7,21 @@
 .Dash > * {
   margin: 10px 0;
 }
+
+@media (min-width: 830px) {
+  .Dash {
+    width: 375px;
+  }
+}
+@media (min-width: 1000px) {
+  .Dash {
+    width: 475px;
+    margin-left: 5vw;
+  }
+}
+@media (min-width: 1200px) {
+  .Dash {
+    width: 50%;
+  }
+}
+
