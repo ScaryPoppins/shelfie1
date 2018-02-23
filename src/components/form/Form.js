@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import noImage from './../../assets/no_image.jpg';
+import './Form.css';
+
 class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
       name: '',
       price: 0,
-      description: '',
       img: ''
     }
+    this.imageInput = this.imageInput.bind(this);
   }
   // Updates inputs
   handleUpdate(prop, val) {
@@ -55,6 +58,13 @@ class Form extends Component {
     this.handleUpdate('price', val)
   }
 
+  // Validates image
+  imageInput(url) {
+    var img = new Image();
+    img.onload = _=> this.handleUpdate('img', url);
+    img.onerror = _=> this.handleUpdate('img', '');
+    img.src = url;
+  }
   // Takes price input and converts it to a number type. Also converts amount to pennies for easy db storage
   numberSubmit(num) {
     num ? num = Number(num) : num = 0
@@ -63,12 +73,11 @@ class Form extends Component {
 
   // Submits new product
   handleSubmit() {
-    let { name, price, description, img } = this.state;
+    let { name, price, img } = this.state;
     if (name) {
       let product = {
         name,
         price: this.numberSubmit(price),
-        description,
         img
       }
       axios.post('/api/product', product)
@@ -87,20 +96,25 @@ class Form extends Component {
     this.setState({
       name: '',
       price: 0,
-      description: '',
       img: ''
     })
   }
   render() {
     return (
       <div className='Form'>
-        <div className='form_img_preview' style={{}}></div>
-        <input type='text' value={this.state.img} onChange={e => this.handleUpdate('img', e.target.value)} />
+        {this.state.img 
+        ? <div className='form_img_preview' style={{ backgroundImage: `url('${this.state.img}')` }}></div>
+        : <div className='form_img_preview' style={{ backgroundImage: `url('${noImage}')` }}></div>}
+        <p>Image URL:</p>
+        <input type='text' value={this.state.img} onChange={e => this.imageInput(e.target.value)} />
+        <p>Product Name:</p>
         <input type='text' value={this.state.name} onChange={e => this.handleUpdate('name', e.target.value)} />
+        <p>Price:</p>
         <input type='text' pattern="[0-9]*" value={this.state.price} onChange={e => this.numberInput(e.target.value)} />
-        <textarea value={this.state.description} onChange={e => this.handleUpdate('description', e.target.value)} />
-        <button onClick={_ => this.handleSubmit()}>Save</button>
-        <button onClick={_ => this.clearInputs()}>Cancel</button>
+        <div className='form_button_box'>
+          <button onClick={_ => this.clearInputs()}>Cancel</button>
+          <button onClick={_ => this.handleSubmit()}>Add to Inventory</button>
+        </div>
       </div>
     );
   }

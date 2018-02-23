@@ -20,8 +20,8 @@ module.exports = {
   },
   createProduct: (req, res) => {
     console.log('body', req.body)
-    let {name, price, description, img} = req.body;
-    req.app.get('db').create_product([name, price, description, img])
+    let {name, price, img} = req.body;
+    req.app.get('db').create_product([name, price, img])
     .then(products => {
       products = returnToDollars(products);
       res.status(200).send(products)

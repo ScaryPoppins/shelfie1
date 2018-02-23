@@ -3,7 +3,7 @@ import noImg from './../../assets/no_image.jpg';
 import './Product.css';
 
 export default function Product(props) {
-  let { name, price, description, img } = props.item;
+  let { name, price, img } = props.item;
   img ? null : img = noImg;
   return (
     <div className='Product'>
@@ -12,7 +12,6 @@ export default function Product(props) {
         <p className='product_title'>{name}</p>
         <p className='product_price'>${price}</p>
       </div>
-      <p>{description}</p>
     </div>
   )
 }
