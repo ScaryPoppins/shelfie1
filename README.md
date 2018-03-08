@@ -29,8 +29,8 @@ This section will help you create the files you need and install the packages yo
 4) Open server.js and require your packages and the controller file.
 5) Setup a basic Express server (we will add endpoints later, just get the server ready to run).
 6) Open your package.json. Add your main property (so nodemon will work) and your proxy (so our axios requests will work).
-  * Your main should look like `"main": "server/server.js"`
-  * Your proxy should look like `"proxy": "http://localhost:4000"` using whatever port your server is setup to run on.
+    * Your main should look like `"main": "server/server.js"`
+    * Your proxy should look like `"proxy": "http://localhost:4000"` using whatever port your server is setup to run on.
 7) Run `nodemon` and make sure your server runs.
 
 ## Database
