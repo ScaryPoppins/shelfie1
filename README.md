@@ -47,7 +47,8 @@ This section will help you create the files you need and install the packages yo
 11) It's helpful to insert some dummy data into your database at this point to help you test as you go along. 
 
 ## Competencies
-Congradulations! If you finished all the setup, you've already completed some demo competencies! </br>
+Congradulations! If you finished all the setup, you've already completed some demo competencies!
+
 "Student can use class based components in react and it's features (render, JSX,nested components)" </br>
 "Student can apply ES6 constructs in React for better code (import, export, destructuring)" </br>
 "Student can create Node servers using the Express package (Server running)" </br>
