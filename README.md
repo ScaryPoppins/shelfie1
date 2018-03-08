@@ -11,7 +11,7 @@ Good luck and work hard!
 This section will help you create the files you need and install the packages you need.
 
 ## React
-1) Run `create-react-app shelfie` cd into the folder to get started.
+1) Run `create-react-app shelfie` and cd into the folder to get started.
 2) Run `npm i axios --save`. This is the only package we need to add for our front end.
 3) Create a component folder inside of src
 4) Inside your component folder create a folder for each component we will be using (Dashboard, Product, Form, and Header)
@@ -29,8 +29,8 @@ This section will help you create the files you need and install the packages yo
 4) Open server.js and require your packages and the controller file.
 5) Setup a basic Express server (we will add endpoints later, just get the server ready to run).
 6) Open your package.json. Add your main property (so nodemon will work) and your proxy (so our axios requests will work).
-  a) Your main should look like `"main": "server/server.js"`
-  b) Your proxy should look like `"proxy": "http://localhost:4000"` using whatever port your server is setup to run on.
+  * Your main should look like `"main": "server/server.js"`
+  * Your proxy should look like `"proxy": "http://localhost:4000"` using whatever port your server is setup to run on.
 7) Run `nodemon` and make sure your server runs.
 
 ## Database
@@ -45,6 +45,15 @@ This section will help you create the files you need and install the packages yo
 9) Make sure to run `nodemon` again and make sure your database is connecting.
 10) Copy the connection string from your .env file into SQLTabs and create the products table.
 11) It's helpful to insert some dummy data into your database at this point to help you test as you go along. 
+
+## Competencies
+Congradulations! If you finished all the setup, you've already completed some demo competencies! </br>
+"Student can use class based components in react and it's features (render, JSX,nested components)" </br>
+"Student can apply ES6 constructs in React for better code (import, export, destructuring)" </br>
+"Student can create Node servers using the Express package (Server running)" </br>
+"Student can create tables in a database" </br>
+"Student can connect to their database" </br>
+
 
 # Color Palette & Font
 
