@@ -53,7 +53,7 @@ Congratulations! If you finished all the setup, you've already completed some de
 "Student can apply ES6 constructs in React for better code (import, export, destructuring)" </br>
 "Student can create Node servers using the Express package (Server running)" </br>
 "Student can create tables in a database" </br>
-"Student can connect to their database" </br>
+"Student can connect to their database using Massive" </br>
 
 # Part 1
 
@@ -139,6 +139,7 @@ Lastly, you are going hit the POST endpoint with an axios request
     * You should take the name, price, and image URL from state and send them on the body of the request.
     * Once the response comes back from the server, invoke the method you passed from App to Form through props.
     * Also invoke the method that clears the inputs.
+* The method should fire when a user clicks the 'Add to Inventory' button.
 
 ## Competencies
 You just covered a lot of competencies! Here is the breakdown:
@@ -165,9 +166,97 @@ You just covered a lot of competencies! Here is the breakdown:
 <strong>Step 6</strong> </br>
 "Student can use class based components in react and it's features (.bind)" </br>
 
+# Part 2
 
+Live example here
 
+For the second part of the project you will be adding two additional features: deleting products and editing existing products.
 
+Functionality of the form:
+* The form should still perform all of the functionality previously added.
+* The 'Add to Inventory' and 'Save Changes' buttons should be conditionally rendered.
+    * A user should be able to click the 'Add to Inventory' button only when adding a new product.
+    * A user should be able to click the 'Save Changes' button only when editing an existing product.
+* A user should be able to click the 'Save Changes' button.
+    * This should update the product in the database.
+    * This should clear the input boxes and display the 'Add to Inventory' button once complete.
+* A user should be able to click the 'Cancel' button while editing.
+    * This should cancel any changes made to the product.
+    * This should clear the input boxes and display the 'Add to Inventory' button.
+
+Functionality of the dashboard:
+* The dashboard should still perform all of the functionality previously added.
+* A 'Edit' and a 'Delete' button should display for every product.
+* A user should be able to click any 'Delete' button to remove the corresponding product from the database.
+* A user should be able to click and 'Edit' button to edit the corresponding product.
+    * This should populate the form input boxes with the existing values for the product.
+    * This should display the 'Save Changes' button in the form.
+
+## Step 1
+In this step you will add the delete functionality.
+
+* Write a delete endpoint in your server. 
+    * The endpoint should use a parameter to determine which product to remove from the database. 
+    * The endpoint should respond with the 'all good' status code if the product is successfully removed.
+* Before you write your axios request, open App and pass the method that makes the get request down to Dashboard through props. We need to call this method after we delete a product to get the updated list.   
+* Write a method in Dashboard that sends an axios request to the endpoint you just wrote.
+    * The method should accept a parameter to determine which product to remove from the database.
+    * Once the response comes back from the server, invoke the method you passed from App to Dashboard through props.
+* Pass the method from Dashboard to each Product component through props. 
+    * The method should fire when a user clicks any of the 'Delete' buttons.
+    * Remember to pass an argument into the method to identify which product should be deleted.
+
+## Step 2
+Next you will add the abiltiy to select a product to edit.
+
+* Add an additional property to the App state to store the currently selected product and pass this data to Form through props.
+* The Form state should store the id of the currently selected product when editing.
+    * This value should be null if the user is adding a new product.
+* Use the componentWillReceiveProps lifecycle hook in Form.
+    * In this hook you should check if a product has been selected and passed down from App to Form through props.
+    * If so, update state with the values of the currently selected product.
+    * If a product has been selected the 'Add to Inventory' button should switch to the 'Save Changes'.
+* Write a method in App to set the selected product on state.
+    * The method should accept a parameter that is the product to be edited. 
+    * Remember to set the value of 'this' for the method in App. 
+* Pass the method down through props from App to Dashboard, then again from Dashboard to each Product component.
+    * The method should fire when a user clicks any of the 'Edit' buttons.
+    * Remember to pass an argument into the method to identify which product was selected.
+
+## Step 3
+Now you will complete the edit functionality by saving the changes in the database.
+
+* Write a put endpoint in your server.
+    * The endpoint should use a parameter to determine which product to update in the database.
+    * The endpoint should use the body to transfer the updated values for the product.
+    * The endpoint should respond with the 'all good' status code if the product is successfully updated.
+* Write a method in Form that sends an axios request to the endpoint you just wrote.
+    * The method should send the values stored in state in the request. 
+    * Once the response comes back from the server, invoke the method that gets all the products that was passed from App to Form in Part 1.
+* The updating method should fire when a user clicks the 'Save Changes' button.
+
+## Competencies
+You added more competencies! Here is the breakdown:
+
+<strong>Step 1</strong> </br>
+"Student can create a RESTful API (DELETE endpoint)" </br>
+"Student can create a RESTful API (params)" </br>
+<strong>Step 2</strong> </br>
+"Student can use componentWillReceiveProps in their code" </br>
+<strong>Step 3</strong> </br>
+"Student can create a RESTful API (PUT endpoint)" </br>
+
+# Part 3
+
+Live example here
+
+For the final part of the project you will be adding one additional feature: the routing. 
+
+The functionality:
+* Your application should still perform all of the functionality previously added.
+* The Dashboard should display in its own view.
+* The Form should display in its own view. 
+    * 
 # Color Palette & Font
 
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/colors.png" />
