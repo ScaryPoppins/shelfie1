@@ -59,10 +59,10 @@ Congratulations! If you finished all the setup, you've already completed some de
 
 Live example here
 
-For the first part of the project you will be adding two main features, viewing products and adding additional products.
+For the first part of the project you will be adding two main features: viewing products and adding additional products.
 
 Functionality of the form:
-* A user should be able to add a name, price for the product.
+* A user should be able to add a name and a price for the product.
 * A user should be able to add an image URL for the product.
 * There should be an image preview that displays the image added by the user.
     * If there is no image URL, a default image should appear in the preview.
@@ -73,7 +73,7 @@ Functionality of the form:
     * This should clear the input boxes
 
 Functionality of the dashboard:
-* All products that have been added to the database should display.
+* All products in the database should display.
     * Each product should display the name and price.
     * If there is no image URL, a default image should appear for the product.
 
@@ -121,11 +121,11 @@ Now that your endpoint is working, you'll hit it with axios from your front-end.
 Next you need to write your POST endpoint so you can add new products to your database.
 
 * Open server.js and create the entry point for the endpoint. The url should be '/api/product'.
-* Create the funciton for this endpoint in controller.js. This endpoint should pull the name, price, and image URL off of the body. For now all you should do is console.log these values to make sure they're getting to the endpoint correctly.
+* Create the function for this endpoint in controller.js. This endpoint should pull the name, price, and image URL off of the body. For now all you should do is console.log these values to make sure they're getting to the endpoint correctly.
 * Just like before, we should send a test string in the response so we can test our endpoint.
-* Make sure `nodemon` is running and open Postman again. When testing your endpoint, make sure to send a fake name, price, and image URL on the body. Once you get the test string back, and you can see the console.log in your endpoint showing the same fake values you sent in Postman you're ready to move on.
+* Make sure `nodemon` is running and open Postman again. When testing your endpoint, make sure to send a fake name, price, and image URL on the body. Once you get the test string back, and you can see the console.log in your endpoint showing the same fake values you sent in Postman, you're ready to move on.
 * Open SQLTabs and write a query to add a new product in the table. Make sure to test it.
-    * Remember that parameters ($1, $2, etc) only work in your project. Test your sql statement with actual data here.
+    * Remember that parameters ($1, $2, etc) only work in your project files and not in SQLTabs. Test your sql query with actual data here.
 * Create a sql file in your db folder named 'create_product'. Copy the query you wrote in SQLTabs into the file, change the dummy data to parameters, and save it. 
 * Go back to the function you wrote in your controller and remove the test response. Replace it with the database function create_product. Now set up the response to send the 'all good' status code. 
 * Go back to Postman and test your endpoint again. This time you shouldn't get any data in the response, but the status code should be green and say 'OK'. Query your database and you should see the new product in your products table.
@@ -137,43 +137,33 @@ Lastly, you are going hit the POST endpoint with an axios request
     * Remember to set the value of 'this' for the method in App.
 * Write a method in Form that makes a post request to the endpoint you just wrote. 
     * You should take the name, price, and image URL from state and send them on the body of the request.
-    * Once the response comes back from the server, invoke the method you passed through props.
+    * Once the response comes back from the server, invoke the method you passed from App to Form through props.
     * Also invoke the method that clears the inputs.
 
 ## Competencies
 You just covered a lot of competencies! Here is the breakdown:
 
-Step 1 </br>
+<strong>Step 1</strong> </br>
 "Student can use class based components in react and it's features (state, setState, constructors)" </br>
 "Student can use class based components in react and it's features (events)" </br>
 "Student can apply ES6 constructs in React for better code (arrow functions)" </br>
-Step 2 </br>
+<strong>Step 2</strong> </br>
 "Student can use class based components in react and it's features (props)" </br>
 "Student can create functional components that receive and render props" </br>
-Step 3 </br>
+<strong>Step 3</strong> </br>
 "Student can create a RESTful API (GET endpoint)" </br>
 "Student can create a RESTful API (Status codes)" </br>
 "Student can create SQL statements to manipulate data in their databases (Select)" </br>
 "Student can run SQL commands in their NodeJS servers using Massive" </br>
-Step 4 </br>
+<strong>Step 4</strong> </br>
 "Student can interact with the web via axios and REST" </br>
 "Student can use componentDidMount in their code" </br>
-Step 5 </br>
+<strong>Step 5</strong> </br>
 "Student can create a RESTful API (POST endpoint)" </br>
 "Student can create a RESTful API (body parser)" </br>
 "Student can create SQL statements to manipulate data in their databases (Insert)" </br>
-Step 6 </br>
+<strong>Step 6</strong> </br>
 "Student can use class based components in react and it's features (.bind)" </br>
-
-
-
-
-
-
-
-
-
-
 
 
 
