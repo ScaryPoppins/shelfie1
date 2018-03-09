@@ -2,7 +2,9 @@
 
 # Project Summary
 
-This project is designed to give you an opportunity to build something from scratch and to teach you how to connect all the pieces of an application together. All of the instructions give you an idea of what order to do things in, but there won't be any guidance or solutions on how to write the code itself. This project is broken into three parts. The setup instructions are more detailed and are designed to get you started. Parts 1-3 get progressively less detailed to give you a chance to practice your skills on your own. Your mentors have also been asked to provide only minimal guidance. They can point you in the right direction, but cannot help you code. This project is a chance for you to combine and showcase the skills you've learned so far.
+This project is designed to give you an opportunity to build something from scratch and to teach you how to connect all the pieces of an application together. All of the instructions give you an idea of what order to do things in, but there won't be any guidance or solutions on how to write the code itself. The styling of the project is not included in the instructions at all and should be completed at your disgression. 
+
+This project is broken into three parts. The setup instructions are more detailed and are designed to get you started. Parts 1-3 get progressively less detailed to give you a chance to practice your skills on your own. Your mentors have also been asked to provide only minimal guidance. They can point you in the right direction, but cannot help you code. This project is a chance for you to combine and showcase the skills you've learned so far.
 
 Good luck and work hard!
 
@@ -250,13 +252,58 @@ You added more competencies! Here is the breakdown:
 
 Live example here
 
-For the final part of the project you will be adding one additional feature: the routing. 
+For the final part of the project you will be adding one additional feature: the routing. This part of the project will not have steps for you to follow, but there will be a list of changes that you need to make in each component to your previous functionality.
 
 The functionality:
 * Your application should still perform all of the functionality previously added.
-* The Dashboard should display in its own view.
-* The Form should display in its own view. 
-    * 
+* The Dashboard should have its own route.
+* The Form should be used in two routes. 
+    * There should be a route for adding a product.
+    * There should be a route for editing an existing product.
+* A user should be able to navigate between the Dashboard and the Add Form using navigation links in the Header.
+* A user should be able to navigate to the Edit Form using the 'Edit' buttons. 
+* A user should be navigated to the Dashboard upon successfully adding a new product.
+* A user should be navigated to the Dashboard upon successfully saving changes to an existing product.
+* A user should be navigated to the Dashboard upon canceling changes to an existing product.
+
+## Additional Setup
+Run `npm i react-router-dom --save`
+
+## Routing
+You should have three routes total.
+* '/' should render the Dashboard component.
+* '/add' should render the Form component.
+* '/edit/:id' should render the Form component.
+
+## Changes
+
+App
+* You should no longer store the list of products in App state (should move to Dashboard state)
+* You should no longer store the currently selected product in App state (this will not need to be stored in state)
+* The method to get the products should no longer be defined in App (should move to Dashboard)
+* The method to select a product to be edited should not exist.
+    * This functionality should instead be built using parameters in your routing.
+* You should use App to set up your routes.
+
+Dashboard
+* You should now store the list of products in Dashboard state (moved from App)
+* The method to get the products should be defined here (moved from App)
+
+Product
+* The edit button should now route to the edit view, instead of invoking a method to select the product. Your edit route should use a parameter to determine which product is currently being edited.
+
+Form
+* You should write a new get endpoint that returns a single product.
+* You should write a method to hit this endpoint.
+* This method should fire in componentDidMount if the user has selected a product to edit. If the user is adding a new product the method should not fire. 
+* You should no longer use componentWillReceiveProps lifecycle method.
+ 
+## Competencies
+You added another big competency!
+
+"Student can add ReactRouter to their code base (HashRouter, Link, Route, Switch, Components, match object)"
+
+
 # Color Palette & Font
 
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/colors.png" />
