@@ -200,7 +200,8 @@ Functionality of the dashboard:
 ## Design
 ### View 
 <img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part2_view.png" />
-### Edit functionality
+
+### Edit Functionality
 <img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part2_edit.png" />
 
 ## Step 1
