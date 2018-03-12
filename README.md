@@ -12,6 +12,12 @@ Good luck and work hard!
 
 This section will help you create the files you need and install the packages you need.
 
+## Color Palette & Font
+
+<img src="https://github.com/bethtelford/blob/master/assets/design_guide.png" />
+
+<b><a href="https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans">Google Font - Open Sans</a></b>
+
 ## React
 1) Run `create-react-app shelfie` and cd into the folder to get started.
 2) Run `npm i axios --save`. This is the only package you need to add for our front end.
@@ -324,11 +330,7 @@ You added another big competency!
 "Student can add ReactRouter to their code base (HashRouter, Link, Route, Switch, Components, match object)"
 
 
-# Color Palette & Font
 
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/colors.png" />
-
-<b><a href="https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans">Google Font - Open Sans</a></b>
 
 # Application Design
 
