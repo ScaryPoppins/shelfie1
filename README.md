@@ -81,7 +81,6 @@ Functionality of the dashboard:
 
 ## Design
 <img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part1_view.png" />
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part1_view2.png" />
 
 ## Step 1
 You are going to start with the basic layout of the form and setting up the input boxes. You need to store the value of all three inputs in state.
@@ -197,6 +196,12 @@ Functionality of the dashboard:
 * A user should be able to click and 'Edit' button to edit the corresponding product.
     * This should populate the form input boxes with the existing values for the product.
     * This should display the 'Save Changes' button in the form.
+
+## Design
+### View 
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part2_view.png" />
+### Edit functionality
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part2_edit.png" />
 
 ## Step 1
 In this step you will add the delete functionality.
