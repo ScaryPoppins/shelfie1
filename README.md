@@ -79,6 +79,10 @@ Functionality of the dashboard:
     * Each product should display the name and price.
     * If there is no image URL, a default image should appear for the product.
 
+## Design
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part1_view.png" />
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part1_view2.png" />
+
 ## Step 1
 You are going to start with the basic layout of the form and setting up the input boxes. You need to store the value of all three inputs in state.
 
