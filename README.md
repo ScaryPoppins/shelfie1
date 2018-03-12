@@ -276,6 +276,16 @@ The functionality:
 * A user should be navigated to the Dashboard upon successfully saving changes to an existing product.
 * A user should be navigated to the Dashboard upon canceling changes to an existing product.
 
+## Design
+### Dashboard
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part3_dashboard.png" />
+
+### Add
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part3_add.png" />
+
+### Edit
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part3_edit.png" />
+
 ## Additional Setup
 Run `npm i react-router-dom --save`
 
