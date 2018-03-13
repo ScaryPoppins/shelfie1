@@ -16,7 +16,7 @@ This section will help you create the files you need and install the packages yo
 
 <img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/style_guide.png" />
 
-<b><a href="https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans">Google Font - Open Sans</a></b>
+<b>[Google Font - Open Sans](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans)</b>
 
 ## React
 1) Run `create-react-app shelfie` and cd into the folder to get started.
@@ -65,7 +65,7 @@ Congratulations! If you finished all the setup, you've already completed some de
 
 # Part 1
 
-Live example here
+<b>Live example [here](#). Filled out planning sheet [here](https://github.com/bethtelford/shelfie-redo/blob/master/PLANNING_SHEET.md)</b>
 
 For the first part of the project you will be adding two main features: viewing the inventory and adding additional products.
 
@@ -329,4 +329,4 @@ You added another big competency!
 
 "Student can add ReactRouter to their code base (HashRouter, Link, Route, Switch, Components, match object)"
 
-# Congratulations! You've completed 25 competencies and built your first full-stack application!
+<b>Congratulations! You've completed 25 competencies and built your first full-stack application!</b>
