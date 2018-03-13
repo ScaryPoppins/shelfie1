@@ -67,7 +67,7 @@ Congratulations! If you finished all the setup, you've already completed some de
 
 Live example here
 
-For the first part of the project you will be adding two main features: viewing products and adding additional products.
+For the first part of the project you will be adding two main features: viewing the inventory and adding additional products.
 
 Functionality of the form:
 * A user should be able to add a name and a price for the product.
@@ -98,19 +98,19 @@ You are going to start with the basic layout of the form and setting up the inpu
 * Next you need to reset the input values when the user clicks 'Cancel'. Write a method to reset state and hook it up to the cancel button using an event handler.
 
 ## Step 2
-In this step you will set up the dashboard to display the products. 
+In this step you will set up the dashboard to display the inventory. 
 
-* Store the list of products in the App state. This will make it easier to update with new products later. 
+* Store the inventory list in the App state. This will make it easier to update with new products later. 
     * Fill the list with some dummy products so you have something to display. 
     * Each one should have a name, price, and image.
     * You can get rid of your dummy data once you are pulling the data from the backend.
-* Pass the list of products down to the Dashboard component through props.
-* Inside Dashboard you should map over the list of products and render the Product component for each one. At this point you should see the word 'Product' repeated the same number of times as you have products in your dummy data.
+* Pass the inventory list down to the Dashboard component through props.
+* Inside Dashboard you should map over the inventory list and render the Product component for each product. At this point you should see the word 'Product' repeated the same number of times as you have products in your dummy data.
 * Now you should update the Product component to display a name, price, and image based on props.
-* Go back to Dashboard and update where you're mapping over the products to pass the current product information to the Product component through props.
+* Go back to Dashboard and update where you're mapping over the inventory to pass the current product information to the Product component through props.
 
 ## Step 3
-It's time to write your GET endpoint so you get the list of products from the database. 
+It's time to write your GET endpoint so you get the inventory list from the database. 
 
 * Open server.js and create the entry point for the endpoint. The url should be '/api/inventory'.
 * Create the function for this endpoint in controller.js. Set up your endpoint to just send a string (I recommend 'It worked!!! Woohoo!!!') so you can make sure the endpoint works before worrying about the database. Remember to set a status code as well.
@@ -118,14 +118,14 @@ It's time to write your GET endpoint so you get the list of products from the da
 * Open SQLTabs and write a query to get all the products from the table. Make sure to test it.
 * Create a sql file in your db folder named 'get_inventory'. Copy the query you wrote in SQLTabs into the file and save it. 
 * Go back to the function you wrote in your controller and remove the test response. Replace it with the database function get_inventory. Now set up the resonse to send the products that come out of the database (with a status code of course).
-* Go back to Postman and test your endpoint again. This time you should get a list of products.
+* Go back to Postman and test your endpoint again. This time you should get the inventory list.
 
 ## Step 4 
 Now that your endpoint is working, you'll hit it with axios from your front-end.
 
 * Remove the dummy products you created in the App state; we don't need them anymore. (Note: we still need to keep the list on state, we are just removing the fake products from the list)
 * Write a method in App that makes a get request to the endpoint you just wrote. 
-    * Once the response comes back from the server, update state with the list of products you got from the database.
+    * Once the response comes back from the server, update state with the inventory list you got from the database.
 * You want this method to fire as soon as the user opens your page, so invoke it in the lifecycle method that fires as soon as the component loads.
 
 ## Step 5
@@ -144,7 +144,7 @@ Next you need to write your POST endpoint so you can add new products to your da
 ## Step 6
 Lastly, you are going hit the POST endpoint with an axios request
 
-* Before you write your post request, open App and pass the method that makes the get request down to Form through props. We need to call this method after we create a new product to get the updated list. 
+* Before you write your post request, open App and pass the method that makes the get request down to Form through props. We need to call this method after we create a new product to get the updated inventory list. 
     * Remember to set the value of 'this' for the method in App.
 * Write a method in Form that makes a post request to the endpoint you just wrote. 
     * You should take the name, price, and image URL from state and send them on the body of the request.
@@ -250,7 +250,7 @@ Now you will complete the edit functionality by saving the changes in the databa
     * The endpoint should respond with the 'all good' status code if the product is successfully updated.
 * Write a method in Form that sends an axios request to the endpoint you just wrote.
     * The method should send the values stored in state in the request. 
-    * Once the response comes back from the server, invoke the method that gets all the products that was passed from App to Form in Part 1.
+    * Once the response comes back from the server, invoke the method that gets the inventory list that was passed from App to Form in Part 1.
 * The updating method should fire when a user clicks the 'Save Changes' button.
 
 ## Competencies
@@ -304,16 +304,16 @@ You should have three routes total.
 ## Changes
 
 App
-* You should no longer store the list of products in App state (should move to Dashboard state)
+* You should no longer store the inventory list in App state (should move to Dashboard state)
 * You should no longer store the currently selected product in App state (this will not need to be stored in state)
-* The method to get the products should no longer be defined in App (should move to Dashboard)
+* The method to get the inventory list should no longer be defined in App (should move to Dashboard)
 * The method to select a product to be edited should not exist.
     * This functionality should instead be built using parameters in your routing.
 * You should use App to set up your routes.
 
 Dashboard
-* You should now store the list of products in Dashboard state (moved from App)
-* The method to get the products should be defined here (moved from App)
+* You should now store the inventory list in Dashboard state (moved from App)
+* The method to get the inventory list should be defined here (moved from App)
 
 Product
 * The edit button should now route to the edit view, instead of invoking a method to select the product. Your edit route should use a parameter to determine which product is currently being edited.
