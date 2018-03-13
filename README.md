@@ -14,7 +14,7 @@ This section will help you create the files you need and install the packages yo
 
 ## Color Palette & Font
 
-<img src="https://github.com/bethtelford/blob/master/assets/design_guide.png" />
+<img src="https://github.com/bethtelford/blob/master/assets/style_guide.png" />
 
 <b><a href="https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans">Google Font - Open Sans</a></b>
 
