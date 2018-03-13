@@ -14,7 +14,7 @@ This section will help you create the files you need and install the packages yo
 
 ## Color Palette & Font
 
-<img src="https://github.com/bethtelford/blob/master/assets/style_guide.png" />
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/style_guide.png" />
 
 <b><a href="https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans">Google Font - Open Sans</a></b>
 
@@ -329,27 +329,4 @@ You added another big competency!
 
 "Student can add ReactRouter to their code base (HashRouter, Link, Route, Switch, Components, match object)"
 
-
-
-
-# Application Design
-
-## Homepage
-
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/home.png" />
-
-## Shelf - Bin List
-
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/shelf.png" />
-
-## Bin - Inventory Details / Edit Bin
-
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/bin.png" />
-
-<br />
-
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/edit.png" />
-
-## Add to Bin
-
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/create.png" />
+# Congratulations! You've completed 25 competencies and built your first full-stack application!
