@@ -112,12 +112,12 @@ In this step you will set up the dashboard to display the products.
 ## Step 3
 It's time to write your GET endpoint so you get the list of products from the database. 
 
-* Open server.js and create the entry point for the endpoint. The url should be '/api/allproducts'.
+* Open server.js and create the entry point for the endpoint. The url should be '/api/inventory'.
 * Create the function for this endpoint in controller.js. Set up your endpoint to just send a string (I recommend 'It worked!!! Woohoo!!!') so you can make sure the endpoint works before worrying about the database. Remember to set a status code as well.
 * Make sure `nodemon` is running and open up Postman to test your endpoint. Once you get your test string back you're ready to move on.
 * Open SQLTabs and write a query to get all the products from the table. Make sure to test it.
-* Create a sql file in your db folder named 'get_all_products'. Copy the query you wrote in SQLTabs into the file and save it. 
-* Go back to the function you wrote in your controller and remove the test response. Replace it with the database function get_all_products. Now set up the resonse to send the products that come out of the database (with a status code of course).
+* Create a sql file in your db folder named 'get_inventory'. Copy the query you wrote in SQLTabs into the file and save it. 
+* Go back to the function you wrote in your controller and remove the test response. Replace it with the database function get_inventory. Now set up the resonse to send the products that come out of the database (with a status code of course).
 * Go back to Postman and test your endpoint again. This time you should get a list of products.
 
 ## Step 4 
