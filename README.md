@@ -124,7 +124,7 @@ It's time to write your GET endpoint so you get the inventory list from the data
 Now that your endpoint is working, you'll hit it with axios from your front-end.
 
 * Remove the dummy products you created in the App state; we don't need them anymore. (Note: we still need to keep the list on state, we are just removing the fake products from the list)
-* Write a method in App that makes a get request to the endpoint you just wrote. 
+* Write a method in App that makes a GET request to the endpoint you just wrote. 
     * Once the response comes back from the server, update state with the inventory list you got from the database.
 * You want this method to fire as soon as the user opens your page, so invoke it in the lifecycle method that fires as soon as the component loads.
 
@@ -144,9 +144,9 @@ Next you need to write your POST endpoint so you can add new products to your da
 ## Step 6
 Lastly, you are going hit the POST endpoint with an axios request
 
-* Before you write your post request, open App and pass the method that makes the get request down to Form through props. We need to call this method after we create a new product to get the updated inventory list. 
+* Before you write your POST request, open App and pass the method that makes the GET request down to Form through props. We need to call this method after we create a new product to get the updated inventory list. 
     * Remember to set the value of 'this' for the method in App.
-* Write a method in Form that makes a post request to the endpoint you just wrote. 
+* Write a method in Form that makes a POST request to the endpoint you just wrote. 
     * You should take the name, price, and image URL from state and send them on the body of the request.
     * Once the response comes back from the server, invoke the method you passed from App to Form through props.
     * Also invoke the method that clears the inputs.
@@ -213,10 +213,10 @@ Functionality of the dashboard:
 ## Step 1
 In this step you will add the delete functionality.
 
-* Write a delete endpoint in your server. 
+* Write a DELETE endpoint in your server. 
     * The endpoint should use a parameter to determine which product to remove from the database. 
     * The endpoint should respond with the 'all good' status code if the product is successfully removed.
-* Before you write your axios request, open App and pass the method that makes the get request down to Dashboard through props. We need to call this method after we delete a product to get the updated list.   
+* Before you write your axios request, open App and pass the method that makes the GET request down to Dashboard through props. We need to call this method after we delete a product to get the updated list.   
 * Write a method in Dashboard that sends an axios request to the endpoint you just wrote.
     * The method should accept a parameter to determine which product to remove from the database.
     * Once the response comes back from the server, invoke the method you passed from App to Dashboard through props.
@@ -244,7 +244,7 @@ Next you will add the abiltiy to select a product to edit.
 ## Step 3
 Now you will complete the edit functionality by saving the changes in the database.
 
-* Write a put endpoint in your server.
+* Write a PUT endpoint in your server.
     * The endpoint should use a parameter to determine which product to update in the database.
     * The endpoint should use the body to transfer the updated values for the product.
     * The endpoint should respond with the 'all good' status code if the product is successfully updated.
@@ -319,10 +319,12 @@ Product
 * The edit button should now route to the edit view, instead of invoking a method to select the product. Your edit route should use a parameter to determine which product is currently being edited.
 
 Form
-* You should write a new get endpoint that returns a single product.
-* You should write a method to hit this endpoint.
-* This method should fire in componentDidMount if the user has selected a product to edit. If the user is adding a new product the method should not fire. 
-* You should no longer use componentWillReceiveProps lifecycle method.
+* You should write a new GET endpoint that returns a single product.
+* You should write a method to hit this endpoint and set the product information on state.
+* This method should fire in componentDidMount if the user has selected a product to edit. If the user is adding a new product the method should not fire.
+* The user should be redirected to the Dashboard view after adding a new product or saving changes to an existing product instead of calling the method to get the inventory. 
+* The componentWillReceiveProps lifecycle hook should no longer be used to check for a selected product.
+* The componentWillReceiveProps lifecycle hook should now be used to clear the inputs if the user navigates from the Edit view to the Add view.
  
 ## Competencies
 You added another big competency!
