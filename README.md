@@ -261,7 +261,7 @@ You added more competencies! Here is the breakdown:
 "Student can create a RESTful API (DELETE endpoint)" </br>
 "Student can create a RESTful API (params)" </br>
 <strong>Step 2</strong> </br>
-"Student can use componentWillReceiveProps in their code" </br>
+"Student can use componentDidUpdate in their code" (This is a bonus competency!)</br>
 <strong>Step 3</strong> </br>
 "Student can create a RESTful API (PUT endpoint)" </br>
 
@@ -324,8 +324,8 @@ Form
 * You should write a method to hit this endpoint and set the product information on state.
 * This method should fire in componentDidMount if the user has selected a product to edit. If the user is adding a new product the method should not fire.
 * The user should be redirected to the Dashboard view after adding a new product or saving changes to an existing product instead of calling the method to get the inventory. 
-* The componentWillReceiveProps lifecycle hook should no longer be used to check for a selected product.
-* The componentWillReceiveProps lifecycle hook should now be used to clear the inputs if the user navigates from the Edit view to the Add view.
+* The componentDidUpdate lifecycle hook should no longer be used to check for a selected product.
+* The componentDidUpdate lifecycle hook should now be used to clear the inputs if the user navigates from the Edit view to the Add view.
  
 ## Competencies
 You added another big competency!
