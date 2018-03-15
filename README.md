@@ -33,19 +33,19 @@ This section will help you create the files you need and install the packages yo
 ## Server
 1) Run `npm i express body-parser --save`
 2) Create a folder called server at the root of the project.
-3) Create a server.js file and a controller.js file inside of that folder.
-4) Open server.js and require your packages and the controller file.
+3) Create an index.js file and a controller.js file inside of that folder.
+4) Open index.js and require your packages and the controller file.
 5) Setup a basic Express server (you will add endpoints later, just get the server ready to run).
 6) Open your package.json. Add your main property (so nodemon will work) and your proxy (so our axios requests will work).
-    * Your main should look like `"main": "server/server.js"`
-    * Your proxy should look like `"proxy": "http://localhost:4000"` using whatever port your server is setup to run on.
+    * Your main should look like `"main": "server/index.js"`
+    * Your proxy should look like `"proxy": "http://localhost:4000"` using whatever port your server is setup to run on (the port should not .
 7) Run `nodemon` and make sure your server runs.
 
 ## Database
 1) Run `npm i massive dotenv --save`
 2) Create an .env file at the root of the project.
 3) Open your .gitignore and add the .env file to it.
-4) Open server.js and require masssive and dotenv (make sure to invoke config on dotenv).
+4) Open server/index.js and require masssive and dotenv (make sure to invoke config on dotenv).
 5) Go to [Heroku](https://heroku.com) and create a database (you can also use a database you already have created, but just be careful not to name your table for Shelfie the same thing as any of the tables that already exist in your database)
 6) Copy the connection URI for your new or existing database and save it in your .env file (make sure you put `?ssl=true` on the end of the string).
 7) Create a folder called db at the root of the project.
@@ -81,8 +81,8 @@ Functionality of the form:
     * This should clear the input boxes
 
 Functionality of the dashboard:
-* All products in the database should display.
-    * Each product should display the name and price.
+* A user should be able to see all of the products that have been added to the inventory.
+* Each individual product should display its name, price and image.
     * If there is no image URL, a default image should appear for the product.
 
 ## Design
@@ -112,7 +112,7 @@ In this step you will set up the dashboard to display the inventory.
 ## Step 3
 It's time to write your GET endpoint so you get the inventory list from the database. 
 
-* Open server.js and create the entry point for the endpoint. The url should be '/api/inventory'.
+* Open server/index.js and create the entry point for the endpoint. The url should be '/api/inventory'.
 * Create the function for this endpoint in controller.js. Set up your endpoint to just send a string (I recommend 'It worked!!! Woohoo!!!') so you can make sure the endpoint works before worrying about the database. Remember to set a status code as well.
 * Make sure `nodemon` is running and open up Postman to test your endpoint. Once you get your test string back you're ready to move on.
 * Open SQLTabs and write a query to get all the products from the table. Make sure to test it.
@@ -131,7 +131,7 @@ Now that your endpoint is working, you'll hit it with axios from your front-end.
 ## Step 5
 Next you need to write your POST endpoint so you can add new products to your database.
 
-* Open server.js and create the entry point for the endpoint. The url should be '/api/product'.
+* Open server/index.js and create the entry point for the endpoint. The url should be '/api/product'.
 * Create the function for this endpoint in controller.js. This endpoint should pull the name, price, and image URL off of the body. For now all you should do is console.log these values to make sure they're getting to the endpoint correctly.
 * Just like before, we should send a test string in the response so we can test our endpoint.
 * Make sure `nodemon` is running and open Postman again. When testing your endpoint, make sure to send a fake name, price, and image URL on the body. Once you get the test string back, and you can see the console.log in your endpoint showing the same fake values you sent in Postman, you're ready to move on.
@@ -230,10 +230,11 @@ Next you will add the abiltiy to select a product to edit.
 * Add an additional property to the App state to store the currently selected product and pass this data to Form through props.
 * The Form state should store the id of the currently selected product when editing.
     * This value should be null if the user is adding a new product.
-* Use the componentWillReceiveProps lifecycle hook in Form.
-    * In this hook you should check if a product has been selected and passed down from App to Form through props.
-    * If so, update state with the values of the currently selected product.
-    * If a product has been selected the 'Add to Inventory' button should switch to the 'Save Changes'.
+* Use the componentDidUpdate lifecycle hook in Form.
+    * This life cycle hook takes in a parameter that represents the old props object before the component updated. In this lifecycle hook we can compare our old props (using the parameter) and our new props (using this.props).
+    * Check to see if the selected product being passed from App on the new props object is different from the product on the old props object.
+    * If they are different it means that a new product has been selected, and so you should update the Form state with the product information from the new props object.
+    * If there is a new product, the 'Add to Inventory' button should switch to the 'Save Changes' button.
 * Write a method in App to set the selected product on state.
     * The method should accept a parameter that is the product to be edited. 
     * Remember to set the value of 'this' for the method in App. 
