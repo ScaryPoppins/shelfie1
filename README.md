@@ -57,11 +57,12 @@ This section will help you create the files you need and install the packages yo
 ## Competencies
 Congratulations! If you finished all the setup, you've already completed some demo competencies!
 
+"Student can use git to create, manage, and synchronize commits locally and remotely (Local and remote repository in-sync, .gitignore)" </br>
 "Student can use class based components in react and it's features (render, JSX, nested components)" </br>
 "Student can apply ES6 constructs in React for better code (import, export, destructuring)" </br>
 "Student can create Node servers using the Express package (Server running)" </br>
 "Student can create tables in a database" </br>
-"Student can connect to their database using Massive" </br>
+"Student can connect to their database in their NodeJS servers using Massive" </br>
 
 # Part 1
 
@@ -327,9 +328,18 @@ Form
 * The componentDidUpdate lifecycle hook should no longer be used to check for a selected product.
 * The componentDidUpdate lifecycle hook should now be used to clear the inputs if the user navigates from the Edit view to the Add view.
  
+## Final Step
+Once you have completed all the functionality of your application you are ready to set up your server to server the front end files
+* Run `npm run build`
+* Use express.static to serve the build from your server.
+
 ## Competencies
-You added another big competency!
+You added four more big competencies!
 
-"Student can add ReactRouter to their code base (HashRouter, Link, Route, Switch, Components, match object)"
+"Student can add ReactRouter to their code base (HashRouter)" </br>
+"Student can add ReactRouter to their code base (Route, Switch, component)" </br>
+"Student can add ReactRouter to their code base (Link)" </br>
+"Student can add ReactRouter to their code base (match object)" </br>
+"Student can create Node servers using the Express package (Serving static files)" </br>
 
-<b>Congratulations! You've completed 25 competencies and built your first full-stack application!</b>
+<b>Congratulations! You've completed 30 competencies and built your first full-stack application!</b>
