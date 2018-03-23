@@ -2,7 +2,7 @@
 
 # Project Summary
 
-This project is designed to give you an opportunity to build something from scratch and to teach you how to connect all the pieces of an application together. All of the instructions give you an idea of what order to do things in, but there won't be any guidance or solutions on how to write the code itself. The styling of the project is not included in the instructions at all and should be completed at your disgression. 
+This project is designed to give you an opportunity to build something from scratch and to teach you how to connect all the pieces of an application together. All of the instructions give you an idea of what order to do things in, but there won't be any guidance or solutions on how to write the code itself. The styling of the project is not included in the instructions at all and should be completed at your discretion. 
 
 This project is broken into three parts. The setup instructions are more detailed and are designed to get you started. Parts 1-3 get progressively less detailed to give you a chance to practice your skills on your own. Your mentors have also been asked to provide only minimal guidance. They can point you in the right direction, but cannot help you code. This project is a chance for you to combine and showcase the skills you've learned so far.
 
@@ -14,7 +14,7 @@ This section will help you create the files you need and install the packages yo
 
 ## Color Palette & Font
 
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/style_guide.png" />
+<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/style_guide.png" />
 
 <b>[Google Font - Open Sans](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans)</b>
 
@@ -38,7 +38,7 @@ This section will help you create the files you need and install the packages yo
 5) Setup a basic Express server (you will add endpoints later, just get the server ready to run).
 6) Open your package.json. Add your main property (so nodemon will work) and your proxy (so our axios requests will work).
     * Your main should look like `"main": "server/index.js"`
-    * Your proxy should look like `"proxy": "http://localhost:4000"` using whatever port your server is setup to run on (the port should not .
+    * Your proxy should look like `"proxy": "http://localhost:4000"` using whatever port your server is setup to run on (the port should not be 3000 because that is what React will be running on)
 7) Run `nodemon` and make sure your server runs.
 
 ## Database
@@ -66,7 +66,7 @@ Congratulations! If you finished all the setup, you've already completed some de
 
 # Part 1
 
-<b>Live example [here](https://cl.ly/1B3t0w332S3K). Filled out planning sheet [here](https://github.com/bethtelford/shelfie-redo/blob/master/PLANNING_SHEET.md)</b>
+<b>Live example [here](https://cl.ly/1B3t0w332S3K). Filled out planning sheet [here](https://github.com/DevMountain/simulation-1/blob/master/PLANNING_SHEET.md)</b>
 
 For the first part of the project you will be adding two main features: viewing the inventory and adding additional products.
 
@@ -87,7 +87,7 @@ Functionality of the dashboard:
     * If there is no image URL, a default image should appear for the product.
 
 ## Design
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part1_view.png" />
+<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/part1_view.png" />
 
 ## Step 1
 You are going to start with the basic layout of the form and setting up the input boxes. You need to store the value of all three inputs in state.
@@ -206,10 +206,10 @@ Functionality of the dashboard:
 
 ## Design
 ### View 
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part2_view.png" />
+<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/part2_view.png" />
 
 ### Edit Functionality
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part2_edit.png" />
+<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/part2_edit.png" />
 
 ## Step 1
 In this step you will add the delete functionality.
@@ -286,13 +286,13 @@ The functionality:
 
 ## Design
 ### Dashboard
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part3_dashboard.png" />
+<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/part3_dashboard.png" />
 
 ### Add
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part3_add.png" />
+<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/part3_add.png" />
 
 ### Edit
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part3_edit.png" />
+<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/part3_edit.png" />
 
 ## Additional Setup
 Run `npm i react-router-dom --save`
