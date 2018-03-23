@@ -66,7 +66,7 @@ Congratulations! If you finished all the setup, you've already completed some de
 
 # Part 1
 
-<b>Live example [here](https://cl.ly/1B3t0w332S3K). Filled out planning sheet [here](https://github.com/DevMountain/simulation-1/blob/master/PLANNING_SHEET.md)</b>
+<b>Live example [here](https://shelfie.devmountain.com/v2/part1/). Filled out planning sheet [here](https://github.com/DevMountain/simulation-1/blob/master/PLANNING_SHEET.md)</b>
 
 For the first part of the project you will be adding two main features: viewing the inventory and adding additional products.
 
@@ -180,7 +180,7 @@ You just covered a lot of competencies! Here is the breakdown:
 
 # Part 2
 
-<b>Live example [here](https://cl.ly/1f1b232P2N0j)</b>
+<b>Live example [here](https://shelfie.devmountain.com/v2/part2/)</b>
 
 For the second part of the project you will be adding two additional features: deleting products and editing existing products.
 
@@ -268,7 +268,7 @@ You added more competencies! Here is the breakdown:
 
 # Part 3
 
-<b>Live example [here](https://cl.ly/2E3W3S32153M)</b>
+<b>Live example [here](https://shelfie.devmountain.com/v2/#/)</b>
 
 For the final part of the project you will be adding one additional feature: the routing. This part of the project will not have steps for you to follow, but there will be a list of changes that you need to make in each component to your previous functionality.
 
