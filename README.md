@@ -87,7 +87,7 @@ Functionality of the dashboard:
     * If there is no image URL, a default image should appear for the product.
 
 ## Design
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part1_view.png" />
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/views/part1_view.png" />
 
 ## Step 1
 You are going to start with the basic layout of the form and setting up the input boxes. You need to store the value of all three inputs in state.
@@ -206,10 +206,10 @@ Functionality of the dashboard:
 
 ## Design
 ### View 
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part2_view.png" />
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/views/part2_view.png" />
 
 ### Edit Functionality
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part2_edit.png" />
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/views/part2_edit.png" />
 
 ## Step 1
 In this step you will add the delete functionality.
@@ -286,13 +286,13 @@ The functionality:
 
 ## Design
 ### Dashboard
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part3_dashboard.png" />
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/views/part3_dashboard.png" />
 
 ### Add
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part3_add.png" />
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/views/part3_add.png" />
 
 ### Edit
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/part3_edit.png" />
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/views/part3_edit.png" />
 
 ## Additional Setup
 Run `npm i react-router-dom --save`
