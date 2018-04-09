@@ -10,50 +10,50 @@ This project is broken into three parts. The setup instructions are more detaile
 Competencies covered by this project
 
 ### Setup
-["Student can use git to create, manage, and synchronize commits locally and remotely (Local and remote repository in-sync, .gitignore)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#database) </br>
-[Student can use class based components in react and it's features (render, JSX, nested components)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#react) </br>
-["Student can apply ES6 constructs in React for better code (import, export, destructuring)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#react) </br>
-["Student can create Node servers using the Express package (Server running)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#server) </br>
-["Student can create tables in a database"](https://github.com/DevMountain/simulation-1/blob/master/README.md#database) </br>
-["Student can connect to their database in their NodeJS servers using Massive"](https://github.com/DevMountain/simulation-1/blob/master/README.md#database) </br>
+["Student can use git to create, manage, and synchronize commits locally and remotely (Local and remote repository in-sync, .gitignore)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#database) </br>
+[Student can use class based components in react and it's features (render, JSX, nested components)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#react) </br>
+["Student can apply ES6 constructs in React for better code (import, export, destructuring)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#react) </br>
+["Student can create Node servers using the Express package (Server running)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#server) </br>
+["Student can create tables in a database"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#database) </br>
+["Student can connect to their database in their NodeJS servers using Massive"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#database) </br>
 
 ### Part 1
 <strong>Step 1</strong> </br>
-["Student can use class based components in react and it's features (state, setState, constructors)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-1) </br>
-["Student can use class based components in react and it's features (events)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-1) </br>
-["Student can apply ES6 constructs in React for better code (arrow functions)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-1) </br>
+["Student can use class based components in react and it's features (state, setState, constructors)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-1) </br>
+["Student can use class based components in react and it's features (events)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-1) </br>
+["Student can apply ES6 constructs in React for better code (arrow functions)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-1) </br>
 <strong>Step 2</strong> </br>
-["Student can use class based components in react and it's features (props)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-2) </br>
-["Student can create functional components that receive and render props"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-2) </br>
+["Student can use class based components in react and it's features (props)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-2) </br>
+["Student can create functional components that receive and render props"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-2) </br>
 <strong>Step 3</strong> </br>
-["Student can create a RESTful API (GET endpoint)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-3) </br>
-["Student can create a RESTful API (Status codes)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-3) </br>
-["Student can create SQL statements to manipulate data in their databases (Select)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-3) </br>
-["Student can run SQL commands in their NodeJS servers using Massive"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-3) </br>
+["Student can create a RESTful API (GET endpoint)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-3) </br>
+["Student can create a RESTful API (Status codes)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-3) </br>
+["Student can create SQL statements to manipulate data in their databases (Select)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-3) </br>
+["Student can run SQL commands in their NodeJS servers using Massive"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-3) </br>
 <strong>Step 4</strong> </br>
-["Student can interact with the web via axios and REST"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-4) </br>
-["Student can use componentDidMount in their code"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-4) </br>
+["Student can interact with the web via axios and REST"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-4) </br>
+["Student can use componentDidMount in their code"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-4) </br>
 <strong>Step 5</strong> </br>
-["Student can create a RESTful API (POST endpoint)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-5) </br>
-["Student can create a RESTful API (body parser)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-5) </br>
-["Student can create SQL statements to manipulate data in their databases (Insert)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-5) </br>
+["Student can create a RESTful API (POST endpoint)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-5) </br>
+["Student can create a RESTful API (body parser)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-5) </br>
+["Student can create SQL statements to manipulate data in their databases (Insert)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-5) </br>
 <strong>Step 6</strong> </br>
-["Student can use class based components in react and it's features (.bind)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-6) </br>
+["Student can use class based components in react and it's features (.bind)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-6) </br>
 
 ### Part 2
 <strong>Step 1</strong> </br>
-["Student can create a RESTful API (DELETE endpoint)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-1-1) </br>
-["Student can create a RESTful API (params)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-1-1) </br>
+["Student can create a RESTful API (DELETE endpoint)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-1-1) </br>
+["Student can create a RESTful API (params)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-1-1) </br>
 <strong>Step 2</strong> </br>
-["Student can use componentDidUpdate in their code" (This is a bonus competency!)](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-2-1)</br>
+["Student can use componentDidUpdate in their code" (This is a bonus competency!)](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-2-1)</br>
 <strong>Step 3</strong> </br>
-["Student can create a RESTful API (PUT endpoint)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-3-1) </br>
+["Student can create a RESTful API (PUT endpoint)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#step-3-1) </br>
 
 ### Part 3
-["Student can add ReactRouter to their code base (HashRouter)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#additional-setup) </br>
-["Student can add ReactRouter to their code base (Route, Switch, component)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#additional-setup) </br>
-["Student can add ReactRouter to their code base (match object)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#additional-setup) </br>
-["Student can create Node servers using the Express package (Serving static files)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#final-step) </br>
+["Student can add ReactRouter to their code base (HashRouter)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#additional-setup) </br>
+["Student can add ReactRouter to their code base (Route, Switch, component)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#additional-setup) </br>
+["Student can add ReactRouter to their code base (match object)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#additional-setup) </br>
+["Student can create Node servers using the Express package (Serving static files)"](https://github.com/bethtelford/shelfie-redo/blob/master/README.md#final-step) </br>
 
 Don't worry too much about the competencies; they will be covered as you build this project. Good luck and work hard!
 
@@ -64,7 +64,7 @@ This section will help you create the files you need and install the packages yo
 
 ## Color Palette & Font
 
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/style_guide.png" />
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/style_guide.png" />
 
 <b>[Google Font - Open Sans](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans)</b>
 
@@ -106,7 +106,7 @@ This section will help you create the files you need and install the packages yo
 
 # Part 1
 
-<b>Live example [here](https://shelfie.devmountain.com/v2/part1/). Filled out planning sheet [here](https://github.com/DevMountain/simulation-1/blob/master/PLANNING_SHEET.md)</b>
+<b>Live example [here](https://shelfie.devmountain.com/v2/part1/). Filled out planning sheet [here](https://github.com/bethtelford/shelfie-redo/blob/master/PLANNING_SHEET.md)</b>
 
 For the first part of the project you will be adding two main features: viewing the inventory and adding additional products.
 
@@ -127,7 +127,7 @@ Functionality of the dashboard:
     * If there is no image URL, a default image should appear for the product.
 
 ## Design
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/part1_view.png" />
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/views/part1_view.png" />
 
 ## Step 1
 You are going to start with the basic layout of the form and setting up the input boxes. You need to store the value of all three inputs in state.
@@ -221,10 +221,10 @@ Functionality of the dashboard:
 
 ## Design
 ### View 
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/part2_view.png" />
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/views/part2_view.png" />
 
 ### Edit Functionality
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/part2_edit.png" />
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/views/part2_edit.png" />
 
 ## Step 1
 In this step you will add the delete functionality.
@@ -290,13 +290,13 @@ The functionality:
 
 ## Design
 ### Dashboard
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/part3_dashboard.png" />
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/views/part3_dashboard.png" />
 
 ### Add
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/part3_add.png" />
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/views/part3_add.png" />
 
 ### Edit
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/part3_edit.png" />
+<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/views/part3_edit.png" />
 
 ## Additional Setup
 Run `npm i react-router-dom --save`
