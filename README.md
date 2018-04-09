@@ -2,11 +2,61 @@
 
 # Project Summary
 
-This project is designed to give you an opportunity to build something from scratch and to teach you how to connect all the pieces of an application together. All of the instructions give you an idea of what order to do things in, but there won't be any guidance or solutions on how to write the code itself. The styling of the project is not included in the instructions at all and should be completed at your disgression. 
+This project is designed to give you an opportunity to build something from scratch and to teach you how to connect all the pieces of an application together. All of the instructions give you an idea of what order to do things in, but there won't be any guidance or solutions on how to write the code itself. The styling of the project is not included in the instructions at all and should be completed at your discretion. 
 
 This project is broken into three parts. The setup instructions are more detailed and are designed to get you started. Parts 1-3 get progressively less detailed to give you a chance to practice your skills on your own. Your mentors have also been asked to provide only minimal guidance. They can point you in the right direction, but cannot help you code. This project is a chance for you to combine and showcase the skills you've learned so far.
 
-Good luck and work hard!
+## Competencies
+Competencies covered by this project
+
+### Setup
+["Student can use git to create, manage, and synchronize commits locally and remotely (Local and remote repository in-sync, .gitignore)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#database) </br>
+[Student can use class based components in react and it's features (render, JSX, nested components)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#react) </br>
+["Student can apply ES6 constructs in React for better code (import, export, destructuring)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#react) </br>
+["Student can create Node servers using the Express package (Server running)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#server) </br>
+["Student can create tables in a database"](https://github.com/DevMountain/simulation-1/blob/master/README.md#database) </br>
+["Student can connect to their database in their NodeJS servers using Massive"](https://github.com/DevMountain/simulation-1/blob/master/README.md#database) </br>
+
+### Part 1
+<strong>Step 1</strong> </br>
+["Student can use class based components in react and it's features (state, setState, constructors)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-1) </br>
+["Student can use class based components in react and it's features (events)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-1) </br>
+["Student can apply ES6 constructs in React for better code (arrow functions)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-1) </br>
+<strong>Step 2</strong> </br>
+["Student can use class based components in react and it's features (props)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-2) </br>
+["Student can create functional components that receive and render props"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-2) </br>
+<strong>Step 3</strong> </br>
+["Student can create a RESTful API (GET endpoint)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-3) </br>
+["Student can create a RESTful API (Status codes)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-3) </br>
+["Student can create SQL statements to manipulate data in their databases (Select)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-3) </br>
+["Student can run SQL commands in their NodeJS servers using Massive"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-3) </br>
+<strong>Step 4</strong> </br>
+["Student can interact with the web via axios and REST"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-4) </br>
+["Student can use componentDidMount in their code"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-4) </br>
+<strong>Step 5</strong> </br>
+["Student can create a RESTful API (POST endpoint)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-5) </br>
+["Student can create a RESTful API (body parser)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-5) </br>
+["Student can create SQL statements to manipulate data in their databases (Insert)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-5) </br>
+<strong>Step 6</strong> </br>
+["Student can use class based components in react and it's features (.bind)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-6) </br>
+
+### Part 2
+<strong>Step 1</strong> </br>
+["Student can create a RESTful API (DELETE endpoint)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-1-1) </br>
+["Student can create a RESTful API (params)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-1-1) </br>
+<strong>Step 2</strong> </br>
+["Student can use componentDidUpdate in their code" (This is a bonus competency!)](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-2-1)</br>
+<strong>Step 3</strong> </br>
+["Student can create a RESTful API (PUT endpoint)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#step-3-1) </br>
+
+### Part 3
+["Student can add ReactRouter to their code base (HashRouter)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#additional-setup) </br>
+["Student can add ReactRouter to their code base (Route, Switch, component)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#additional-setup) </br>
+["Student can add ReactRouter to their code base (match object)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#additional-setup) </br>
+["Student can create Node servers using the Express package (Serving static files)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#final-step) </br>
+
+Don't worry too much about the competencies; they will be covered as you build this project. Good luck and work hard!
+
 
 # Setup
 
@@ -14,7 +64,7 @@ This section will help you create the files you need and install the packages yo
 
 ## Color Palette & Font
 
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/style_guide.png" />
+<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/style_guide.png" />
 
 <b>[Google Font - Open Sans](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans)</b>
 
@@ -38,7 +88,7 @@ This section will help you create the files you need and install the packages yo
 5) Setup a basic Express server (you will add endpoints later, just get the server ready to run).
 6) Open your package.json. Add your main property (so nodemon will work) and your proxy (so our axios requests will work).
     * Your main should look like `"main": "server/index.js"`
-    * Your proxy should look like `"proxy": "http://localhost:4000"` using whatever port your server is setup to run on (the port should not .
+    * Your proxy should look like `"proxy": "http://localhost:4000"` using whatever port your server is setup to run on (the port should not be 3000 because that is what React will be running on)
 7) Run `nodemon` and make sure your server runs.
 
 ## Database
@@ -54,19 +104,9 @@ This section will help you create the files you need and install the packages yo
 10) Copy the connection string from your .env file into SQLTabs and create the products table.
 11) It's helpful to insert some dummy data into your database at this point to help you test as you go along. 
 
-## Competencies
-Congratulations! If you finished all the setup, you've already completed some demo competencies!
-
-"Student can use git to create, manage, and synchronize commits locally and remotely (Local and remote repository in-sync, .gitignore)" </br>
-"Student can use class based components in react and it's features (render, JSX, nested components)" </br>
-"Student can apply ES6 constructs in React for better code (import, export, destructuring)" </br>
-"Student can create Node servers using the Express package (Server running)" </br>
-"Student can create tables in a database" </br>
-"Student can connect to their database in their NodeJS servers using Massive" </br>
-
 # Part 1
 
-<b>Live example [here](https://shelfie.devmountain.com/v2/part1/). Filled out planning sheet [here](https://github.com/bethtelford/shelfie-redo/blob/master/PLANNING_SHEET.md)</b>
+<b>Live example [here](https://shelfie.devmountain.com/v2/part1/). Filled out planning sheet [here](https://github.com/DevMountain/simulation-1/blob/master/PLANNING_SHEET.md)</b>
 
 For the first part of the project you will be adding two main features: viewing the inventory and adding additional products.
 
@@ -87,7 +127,7 @@ Functionality of the dashboard:
     * If there is no image URL, a default image should appear for the product.
 
 ## Design
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/views/part1_view.png" />
+<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/part1_view.png" />
 
 ## Step 1
 You are going to start with the basic layout of the form and setting up the input boxes. You need to store the value of all three inputs in state.
@@ -153,31 +193,6 @@ Lastly, you are going hit the POST endpoint with an axios request
     * Also invoke the method that clears the inputs.
 * The method should fire when a user clicks the 'Add to Inventory' button.
 
-## Competencies
-You just covered a lot of competencies! Here is the breakdown:
-
-<strong>Step 1</strong> </br>
-"Student can use class based components in react and it's features (state, setState, constructors)" </br>
-"Student can use class based components in react and it's features (events)" </br>
-"Student can apply ES6 constructs in React for better code (arrow functions)" </br>
-<strong>Step 2</strong> </br>
-"Student can use class based components in react and it's features (props)" </br>
-"Student can create functional components that receive and render props" </br>
-<strong>Step 3</strong> </br>
-"Student can create a RESTful API (GET endpoint)" </br>
-"Student can create a RESTful API (Status codes)" </br>
-"Student can create SQL statements to manipulate data in their databases (Select)" </br>
-"Student can run SQL commands in their NodeJS servers using Massive" </br>
-<strong>Step 4</strong> </br>
-"Student can interact with the web via axios and REST" </br>
-"Student can use componentDidMount in their code" </br>
-<strong>Step 5</strong> </br>
-"Student can create a RESTful API (POST endpoint)" </br>
-"Student can create a RESTful API (body parser)" </br>
-"Student can create SQL statements to manipulate data in their databases (Insert)" </br>
-<strong>Step 6</strong> </br>
-"Student can use class based components in react and it's features (.bind)" </br>
-
 # Part 2
 
 <b>Live example [here](https://shelfie.devmountain.com/v2/part2/)</b>
@@ -206,10 +221,10 @@ Functionality of the dashboard:
 
 ## Design
 ### View 
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/views/part2_view.png" />
+<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/part2_view.png" />
 
 ### Edit Functionality
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/views/part2_edit.png" />
+<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/part2_edit.png" />
 
 ## Step 1
 In this step you will add the delete functionality.
@@ -255,17 +270,6 @@ Now you will complete the edit functionality by saving the changes in the databa
     * Once the response comes back from the server, invoke the method that gets the inventory list that was passed from App to Form in Part 1.
 * The updating method should fire when a user clicks the 'Save Changes' button.
 
-## Competencies
-You added more competencies! Here is the breakdown:
-
-<strong>Step 1</strong> </br>
-"Student can create a RESTful API (DELETE endpoint)" </br>
-"Student can create a RESTful API (params)" </br>
-<strong>Step 2</strong> </br>
-"Student can use componentDidUpdate in their code" (This is a bonus competency!)</br>
-<strong>Step 3</strong> </br>
-"Student can create a RESTful API (PUT endpoint)" </br>
-
 # Part 3
 
 <b>Live example [here](https://shelfie.devmountain.com/v2/#/)</b>
@@ -286,13 +290,13 @@ The functionality:
 
 ## Design
 ### Dashboard
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/views/part3_dashboard.png" />
+<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/part3_dashboard.png" />
 
 ### Add
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/views/part3_add.png" />
+<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/part3_add.png" />
 
 ### Edit
-<img src="https://github.com/bethtelford/shelfie-redo/blob/master/assets/views/part3_edit.png" />
+<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/part3_edit.png" />
 
 ## Additional Setup
 Run `npm i react-router-dom --save`
@@ -332,14 +336,5 @@ Form
 Once you have completed all the functionality of your application you are ready to set up your server to server the front end files
 * Run `npm run build`
 * Use express.static to serve the build from your server.
-
-## Competencies
-You added four more big competencies!
-
-"Student can add ReactRouter to their code base (HashRouter)" </br>
-"Student can add ReactRouter to their code base (Route, Switch, component)" </br>
-"Student can add ReactRouter to their code base (Link)" </br>
-"Student can add ReactRouter to their code base (match object)" </br>
-"Student can create Node servers using the Express package (Serving static files)" </br>
 
 <b>Congratulations! You've completed 30 competencies and built your first full-stack application!</b>
