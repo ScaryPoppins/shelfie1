@@ -53,7 +53,6 @@ Competencies covered by this project
 ["Student can add ReactRouter to their code base (HashRouter)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#additional-setup) </br>
 ["Student can add ReactRouter to their code base (Route, Switch, component)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#additional-setup) </br>
 ["Student can add ReactRouter to their code base (match object)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#additional-setup) </br>
-["Student can create Node servers using the Express package (Serving static files)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#final-step) </br>
 
 Don't worry too much about the competencies; they will be covered as you build this project. Good luck and work hard!
 
@@ -250,6 +249,7 @@ Next you will add the abiltiy to select a product to edit.
     * Check to see if the selected product being passed from App on the new props object is different from the product on the old props object.
     * If they are different it means that a new product has been selected, and so you should update the Form state with the product information from the new props object.
     * If there is a new product, the 'Add to Inventory' button should switch to the 'Save Changes' button.
+    * <strong>IMPORTANT: This lifecycle method was not covered in lecture, so you are not expected to be able to pass this off easily. If you cannot get through this step, the mentors can help you, BUT if they help you you won't earn the bonus competency for componentDidUpdate at this time.</strong>
 * Write a method in App to set the selected product on state.
     * The method should accept a parameter that is the product to be edited. 
     * Remember to set the value of 'this' for the method in App. 
@@ -331,9 +331,5 @@ Form
 * The componentDidUpdate lifecycle hook should no longer be used to check for a selected product.
 * The componentDidUpdate lifecycle hook should now be used to clear the inputs if the user navigates from the Edit view to the Add view.
  
-## Final Step
-Once you have completed all the functionality of your application you are ready to set up your server to server the front end files
-* Run `npm run build`
-* Use express.static to serve the build from your server.
 
-<b>Congratulations! You've completed 30 competencies and built your first full-stack application!</b>
+<b>Congratulations! You've completed 29 competencies and built your first full-stack application!</b>
