@@ -66,17 +66,29 @@ This section will help you create the files you need and install the packages yo
 
 <b>[Google Font - Open Sans](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans)</b>
 
+## Repository
+Do NOT clone this repository. You will be creating your own.
+1) Navigate in the terminal to the folder you would like to store your simulation in, and then run `create-react-app shelfie`. `cd` into the folder to get started.
+2) Run `git init` to create a local git repo. 
+3) Add and commit all of your files.
+4) Open up your Github profile page and click on 'Repositories'. 
+5) Click on the 'New' button. Name your repo (we suggest 'shelfie', the same name as your local folder). Do NOT initialize the repo with a README.
+6) Now go back to your terminal and run `git remote add origin [INSERT-GITHUB-URL-HERE]` with the url from the remote repo you just created.
+7) And finally, run `git push origin master -u` to push your local files to your remote repo for the first time. 
+
+Make sure to commit and push your code often. It's not fun to lose hours of work.
+
 ## React
-1) Run `create-react-app shelfie` and cd into the folder to get started.
-2) Run `npm i axios --save`. This is the only package you need to add for our front end.
-3) Create a component folder inside of src
-4) Inside your component folder create a folder for each component you will be using (Dashboard, Product, Form, and Header)
-5) Inside each of these folders create a Javascript file named the same thing. Make sure to capitalize the first letter!
-6) Create a simple class component in the Dashboard and Form files. For now just return a div containing the component's name from the render method.
-7) Create a functional component (created with the function keyword) in the Header and Product files. For now just return a div containing the component's name.
-8) Now render the Dashboard, Form, and Header components in App.
-9) Render the Product component inside Dashboard.
-10) Run `npm start` to make sure everything is working. You should see the names of all the components displayed.
+You have already created a React application as part of setting up the Github repo, so now you will start adding packages and files to that project.
+1) Run `npm i axios --save`. This is the only package you need to add for our front end.
+2) Create a component folder inside of src
+3) Inside your component folder create a folder for each component you will be using (Dashboard, Product, Form, and Header)
+4) Inside each of these folders create a Javascript file named the same thing. Make sure to capitalize the first letter!
+5) Create a simple class component in the Dashboard and Form files. For now just return a div containing the component's name from the render method.
+6) Create a functional component (created with the function keyword) in the Header and Product files. For now just return a div containing the component's name.
+7) Now render the Dashboard, Form, and Header components in App.
+8) Render the Product component inside Dashboard.
+9) Run `npm start` to make sure everything is working. You should see the names of all the components displayed.
 
 ## Server
 1) Run `npm i express body-parser --save`
