@@ -58,7 +58,7 @@ Don't worry too much about the competencies; they will be covered as you build t
 
 # Setup
 
-This section will help you create the files you need and install the packages you need.
+This section will help you create the files and install the packages you need.
 
 ## Color Palette & Font
 
@@ -344,4 +344,4 @@ Form
 * The componentDidUpdate lifecycle hook should now be used to clear the inputs if the user navigates from the Edit view to the Add view.
  
 
-<b>Congratulations! You've completed 29 competencies and built your first full-stack application!</b>
+<b>Congratulations! You've completed 28 competencies and built your first full-stack application!</b>
