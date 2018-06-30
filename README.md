@@ -53,13 +53,12 @@ Competencies covered by this project
 ["Student can add ReactRouter to their code base (HashRouter)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#additional-setup) </br>
 ["Student can add ReactRouter to their code base (Route, Switch, component)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#additional-setup) </br>
 ["Student can add ReactRouter to their code base (match object)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#additional-setup) </br>
-["Student can create Node servers using the Express package (Serving static files)"](https://github.com/DevMountain/simulation-1/blob/master/README.md#final-step) </br>
 
 Don't worry too much about the competencies; they will be covered as you build this project. Good luck and work hard!
 
 # Setup
 
-This section will help you create the files you need and install the packages you need.
+This section will help you create the files and install the packages you need.
 
 ## Color Palette & Font
 
@@ -67,17 +66,29 @@ This section will help you create the files you need and install the packages yo
 
 <b>[Google Font - Open Sans](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans)</b>
 
+## Repository
+Do NOT clone this repository. You will be creating your own.
+1) Navigate in the terminal to the folder you would like to store your simulation in, and then run `create-react-app shelfie`. `cd` into the folder to get started.
+2) Run `git init` to create a local git repo. 
+3) Add and commit all of your files.
+4) Open up your Github profile page and click on 'Repositories'. 
+5) Click on the 'New' button. Name your repo (we suggest 'shelfie', the same name as your local folder). Do NOT initialize the repo with a README.
+6) Now go back to your terminal and run `git remote add origin [INSERT-GITHUB-URL-HERE]` with the url from the remote repo you just created.
+7) And finally, run `git push origin master -u` to push your local files to your remote repo for the first time. 
+
+Make sure to commit and push your code often. It's not fun to lose hours of work.
+
 ## React
-1) Run `create-react-app shelfie` and cd into the folder to get started.
-2) Run `npm i axios --save`. This is the only package you need to add for our front end.
-3) Create a component folder inside of src
-4) Inside your component folder create a folder for each component you will be using (Dashboard, Product, Form, and Header)
-5) Inside each of these folders create a Javascript file named the same thing. Make sure to capitalize the first letter!
-6) Create a simple class component in the Dashboard and Form files. For now just return a div containing the component's name from the render method.
-7) Create a functional component (created with the function keyword) in the Header and Product files. For now just return a div containing the component's name.
-8) Now render the Dashboard, Form, and Header components in App.
-9) Render the Product component inside Dashboard.
-10) Run `npm start` to make sure everything is working. You should see the names of all the components displayed.
+You have already created a React application as part of setting up the Github repo, so now you will start adding packages and files to that project.
+1) Run `npm i axios --save`. This is the only package you need to add for our front end.
+2) Create a component folder inside of src
+3) Inside your component folder create a folder for each component you will be using (Dashboard, Product, Form, and Header)
+4) Inside each of these folders create a Javascript file named the same thing. Make sure to capitalize the first letter!
+5) Create a simple class component in the Dashboard and Form files. For now just return a div containing the component's name from the render method.
+6) Create a functional component (created with the function keyword) in the Header and Product files. For now just return a div containing the component's name.
+7) Now render the Dashboard, Form, and Header components in App.
+8) Render the Product component inside Dashboard.
+9) Run `npm start` to make sure everything is working. You should see the names of all the components displayed.
 
 ## Server
 1) Run `npm i express body-parser --save`
@@ -250,6 +261,7 @@ Next you will add the abiltiy to select a product to edit.
     * Check to see if the selected product being passed from App on the new props object is different from the product on the old props object.
     * If they are different it means that a new product has been selected, and so you should update the Form state with the product information from the new props object.
     * If there is a new product, the 'Add to Inventory' button should switch to the 'Save Changes' button.
+    * <strong>IMPORTANT: This lifecycle method was not covered in lecture, so you are not expected to be able to pass this off easily. If you cannot get through this step, the mentors can help you, BUT if they help you you won't earn the bonus competency for componentDidUpdate at this time.</strong>
 * Write a method in App to set the selected product on state.
     * The method should accept a parameter that is the product to be edited. 
     * Remember to set the value of 'this' for the method in App. 
@@ -331,9 +343,5 @@ Form
 * The componentDidUpdate lifecycle hook should no longer be used to check for a selected product.
 * The componentDidUpdate lifecycle hook should now be used to clear the inputs if the user navigates from the Edit view to the Add view.
  
-## Final Step
-Once you have completed all the functionality of your application you are ready to set up your server to server the front end files
-* Run `npm run build`
-* Use express.static to serve the build from your server.
 
-<b>Congratulations! You've completed 30 competencies and built your first full-stack application!</b>
+<b>Congratulations! You've completed 28 competencies and built your first full-stack application!</b>
