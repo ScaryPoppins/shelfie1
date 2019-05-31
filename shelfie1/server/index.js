@@ -7,6 +7,7 @@ const {SERVER_PORT , CONNECTION_STRING} = process.env
 const {getProducts} = require('./controller')
 
 //call massive and execute some logic
+app.use(express.json());
 
 massive(CONNECTION_STRING)
     .then(dbInstance =>{

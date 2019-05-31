@@ -4,7 +4,7 @@ import React from "react";
 function Header() {
 
 
-render(){
+// render(){
     return(
     <div>
         Header
@@ -12,5 +12,5 @@ render(){
 )
 }
     
-}
+// }
 export default Header;

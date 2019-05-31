@@ -1,10 +1,10 @@
 import React, {Component}from 'react';
 import axios from "axios";
-import { HashRouter, Route, Switch } from "react-router-dom";
 import './App.css';
 import Header from './Components/Header/Header'
 import Dashboard from './Components/Dashboard/Dashboard'
 import Form from './Components/Form/Form'
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
@@ -50,16 +50,27 @@ class App extends Component {
 
 render() {
   return (
-    <div>
+    <HashRouter>
 
 {/* Header */}
       <div className = 'header'>
         <Header/>
       </div>
 
-      <div className="app">
-
-{/* Dashboard */}
+        
+      <main className="app">
+       <Switch>
+         {/* Dashboard */}
+         <Route
+              exact path="/"
+                render={() => (
+                  <Dashboard
+                    products={this.state.products}
+                    deleteProduct={this.deleteProduct}
+                    setId={this.setId}
+                  />
+                )}
+              />
         <div className = 'dashboard'>
         <Dashboard 
          products={this.state.products}
@@ -69,10 +80,15 @@ render() {
 
 {/* Form */}
        <div className = 'form'>
-        <Form/>
+       <Route path="/form"
+                render={() => <Form />}
+        />
        </div>
-      </div>
-    </div>
+
+       </Switch>
+      </main>
+
+    </HashRouter>
   );
 }
 }
