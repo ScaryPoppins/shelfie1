@@ -51,7 +51,6 @@ class App extends Component {
 render() {
   return (
     <HashRouter>
-
 {/* Header */}
       <div className = 'header'>
         <Header/>
@@ -71,23 +70,21 @@ render() {
                   />
                 )}
               />
-        <div className = 'dashboard'>
-        <Dashboard 
-         products={this.state.products}
-         setId={this.setId}
-       />
-       </div>
+
 
 {/* Form */}
        <div className = 'form'>
-       <Route path="/form"
-                render={() => <Form />}
-        />
+
+          <Form/>
+      
        </div>
-
        </Switch>
-      </main>
 
+       {/* Move this form back up to the form in the switch */}
+       <Form/>
+
+       
+      </main>
     </HashRouter>
   );
 }
